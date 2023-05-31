@@ -1,38 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e66465, #9198e5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .App {
   text-align: center;
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.typing-app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.keys-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.keys-label {
+  font-weight: bold;
+  color: #2c0fae;
+}
+
+.keys-text {
+  font-size: 24px;
+  color: #c1e327;
+}
+
+.accuracy-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.accuracy-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.accuracy-text {
+  font-size: 24px;
+  color: #777;
+}
+.company-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+@keyframes chaabiAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
   }
 }
+
+.company-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  animation: chaabiAnimation 3s ease-in-out infinite;
+}
+
+.typing-app {
+  padding: 20px;
+  border:#240c8c;
+  border-radius: 10px;
+  font-size: 18px;
+  outline:#191111;
+  box-shadow: 0 2px 4px rgba(60, 45, 45, 0.1);
+}
+
+.done-by-text {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #270606;
+}
+.done-by-text1{
+  position: fixed;
+  bottom: -5px;
+  right: 10px;
+  font-size: 14px;
+  color: #270606;
+}
+
+.email-link {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.email-link:hover {
+  color: #ff6600;
+}
+
+.email-link:hover::after {
+  content: "Recruiters, reach out for opportunities!";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #555;
+}
+
+
