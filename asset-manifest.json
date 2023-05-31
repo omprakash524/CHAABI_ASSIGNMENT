@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CHAABI_ASSIGNMENT/static/css/main.e83b8526.css",
+    "main.js": "/CHAABI_ASSIGNMENT/static/js/main.bf6e9921.js",
+    "index.html": "/CHAABI_ASSIGNMENT/index.html",
+    "main.e83b8526.css.map": "/CHAABI_ASSIGNMENT/static/css/main.e83b8526.css.map",
+    "main.bf6e9921.js.map": "/CHAABI_ASSIGNMENT/static/js/main.bf6e9921.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e83b8526.css",
+    "static/js/main.bf6e9921.js"
+  ]
+}
